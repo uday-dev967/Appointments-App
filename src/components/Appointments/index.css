@@ -1,0 +1,112 @@
+.app-container {
+  background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  background-size: cover;
+  padding: 30px;
+  height: 100vh;
+  font-family: Roboto;
+  color: #171f46;
+}
+
+.card-container {
+  padding: 50px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.image {
+  display: none;
+}
+
+.appointment-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.label {
+  margin-bottom: 10px;
+  color: #b5b7c4;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 35px;
+  padding-left: 10px;
+  border-radius: 3px;
+  outline: none;
+}
+
+.add-button {
+  width: 100px;
+  padding: 10px;
+  background-color: #8b5cf6;
+  border-style: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .image {
+    display: block;
+    width: 50%;
+    max-width: 450px;
+  }
+  .input {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 3px;
+    outline: none;
+  }
+  .responsive-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .appointment-form-container {
+    width: 47%;
+  }
+}
+
+.list-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.starred {
+  margin-top: 30px;
+  border-radius: 5px;
+  border-style: solid;
+  background-color: #ffffff;
+  color: #9897f0;
+  border-color: #9897f0;
+  padding: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.starred-active {
+  border-style: none;
+  background-color: #9897f0;
+  color: #ffffffff;
+}
+
+.apointments-container {
+  overflow-y: auto;
+  max-height: 180px;
+  list-style-type: none;
+  padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .apointments-container {
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
